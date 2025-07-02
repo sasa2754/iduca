@@ -5,14 +5,14 @@ import { CuteButton } from "@/src/components/cuteButton";
 import DownloadForOfflineOutlinedIcon from '@mui/icons-material/DownloadForOfflineOutlined';
 import { BackButton } from "@/src/components/backButton";
 
-interface ICertificate {
-  params: {
-    certificateId: string;
-  };
-}
+// interface ICertificate {
+//   params: {
+//     certificateId: string;
+//   };
+// }
 
-const Certificate = async ({ params }: ICertificate) => {
-  const { certificateId } = params;
+const Certificate = async () => {
+  // const { certificateId } = params;
   return (
     <>
       <Menu />
@@ -22,7 +22,7 @@ const Certificate = async ({ params }: ICertificate) => {
         <div className="flex md:flex-row flex-col gap-5 items-center p-1 md:items-start">
           <BackButton />
           <h1 className="md:text-2xl text-xl font-bold text-(--text) text-center">
-            Certificado do Curso de Marketing Digital {certificateId}
+            Certificado do Curso de Marketing Digital 
           </h1>
         </div>
 
